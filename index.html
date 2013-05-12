@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap</title>
+    <title>LibreCat - Open Tools for Library and Research Services</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="LibreCat">
     <meta name="author" content="LibreCat">
@@ -28,6 +28,38 @@
 </head>
 
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+<!---navbar ---->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">Bootstrap</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="">
+                <a href="./catmandu.html">Catmandu Tutorial</a>
+              </li>
+              <li class="">
+                <a href="./casestudy.html">Case Studies</a>
+              </li>
+              <li class="">
+                <a href="./events.html">Events &mdash; Workshops</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 <div class="jumbotron masthead">
   <div class="container">
@@ -70,37 +102,53 @@
 
         <hr class="soften">
 
-
-    <h1>Catmandu  &mdash; Our Backbone</h1>
+    <div class="marketing">
+          <h1>Catmandu  &mdash; Our Backbone</h1>
     <p class="marketing-byline">Creating any data oriented application the main task is to import data from various sources, map the fields to a common data model and put it all into a database or search engine. In data-warehousing, these processes are called ETL &mdash; Extract, Transform, Load.</p>
 
     <img class="marketing-img" src="assets/img/catmandu.png">
 
         <p>With Catmandu, LibreCat tools abstract digital library and research services as data warehouse processes. As stores we reuse  <a href="http://www.mongodb.org/">MongoDB</a> or <a href="http://www.elasticsearch.org/">ElasticSearch</a>  providing us with developer friendly APIs. Catmandu works with international library standards such as <a href="http://www.loc.gov/marc/">MARC</a>, <a href="http://www.loc.gov/mods/">MODS</a> and <a href="http://dublincore.org/">Dublin Core</a>, protocols such as <a href="http://www.openarchives.org/pmh/">OAI-PMH</a>, <a href="http://www.loc.gov/standards/sru/">SRU</a> and open repositories such as <a href="http://www.dspace.org/">DSpace</a> and <a href="http://fedora-commons.org/">Fedora</a>. And, of course, we speak the evolving <a href="http://semanticweb.org/wiki/Main_Page">Semantic Web</a>.</p>
 
+<div class="row-fluid">
+  <h3>Download from</h3>
+        <div class="span5">
+          <a href="http://search.cpan.org/search?query=Catmandu&mode=all"><img src="http://st.pimg.net/tucs/img/cpan_banner.png"></a>
+          </div>
+            <div class="span5">
+              <br>
+              <iframe src="http://ghbtns.com/github-btn.html?user=librecat&repo=catmandu&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30" align="right"></iframe>
+              <iframe src="http://ghbtns.com/github-btn.html?user=librecat&repo=catmandu&type=fork&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30" align="right"></iframe>
+            </div>
+          </div>
+        </div>
+
     <hr class="soften">
+
+    <div class="marketing">
 
     <h1>Built with LibreCat</h1>
     <p class="marketing-byline">For even more applications with LibreCat, browse our case-studies.</p>
     <div class="row-fluid">
-      <ul class="thumbnails example-sites">
+      <ul class="thumbnails">
         <li class="span4">
-          <a class="thumbnail" href="https://biblio.ugent.be/" target="_blank">
+          <a class="thumbnail" href="https://biblio.ugent.be/" alt="300x200" style="width: 300px; height: 200px;" target="_blank">
             <img src="assets/img/biblio2.png" alt="biblio.ugent.be/">
           </a>
         </li>
         <li class="span4">
-          <a class="thumbnail" href="" target="http://pub.uni-bielefeld.de/person/9618254">
+          <a class="thumbnail" href="http://pub.uni-bielefeld.de/person/9618254" alt="300x200" style="width: 300px; height: 200px;" target="http://pub.uni-bielefeld.de/person/9618254">
             <img src="assets/img/buschi2.png" alt="pub.uni-bielefeld.de">
           </a>
         </li>
         <li class="span4">
-          <a class="thumbnail" href="http://www.uni-bielefeld.de/(en)/biologie/Evolutionsbiologie/03-engqvist-publications.html" target="_blank">
-            <img src="assets/img/evo2.png" alt="Engqvist">
+          <a class="thumbnail" alt="300x200" style="width: 300px; height: 200px;" href="https://lup.lub.lu.se/luur/" target="_blank">
+            <img src="assets/img/lund.png" alt="lund">
           </a>
         </li>
       </ul>
      </div>
+   </div>
 
   </div>
 
@@ -112,7 +160,9 @@
     ================================================== -->
     <footer class="footer">
       <div class="container">
-        <p>Designed and built with all the love</p>
+        <p>LibreCat is an Open Collaboration of the Universty Libraries of Lund, Ghent and Bielefeld. 
+        <p>We acknowlegde support from the <a href="http://www.dfg.de/">Deutsche Forschungsgemeinschaft (DFG)</a> under the Project <a href="http://www.ub.uni-bielefeld.de/wiki/PubLister">Persönliche Publikationslisten als hochschulweiter Dienst</a>.
+        <p>Designed and built with <a href="https://github.com/twitter/bootstrap">Bootstrap</p>
       </div>
     </footer>
 
